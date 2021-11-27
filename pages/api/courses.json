@@ -1,32 +1,22 @@
 [
   {
-    "id": "1",
-    "title": "sample title",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus semper mi, tincidunt lobortis ipsum tristique eu. Vivamus molestie mattis porta. Nulla imperdiet eros vel elit hendrerit malesuada. Ut tincidunt pellentesque pellentesque. Ut imperdiet vestibulum tortor, in lobortis ipsum. Sed ultrices turpis velit, ut dignissim risus lobortis in. Morbi pellentesque velit leo, non facilisis risus hendrerit eget. Fusce velit dui, aliquet at magna nec, tincidunt tincidunt nibh. Aliquam feugiat bibendum dui nec scelerisque. Nam scelerisque neque facilisis bibendum pulvinar. Praesent nec ipsum et erat iaculis pellentesque non et urna. In mollis mi id maximus malesuada. Curabitur malesuada purus dolor. Maecenas at tempor tellus.",
-    "videoUrl": "https://www.youtube.com/embed/w5Wa_B1ZWow"
-  },
-  {
-    "id": "2",
-    "title": "sample title 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus semper mi,",
-    "description": "smaple desc 2",
-    "videoUrl": "https://www.youtube.com/embed/WyMyJzV3Xgw"
-  },
-  {
-    "id": "3",
-    "title": "3 sample title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus semper mi,",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus semper mi, tincidunt lobortis ipsum tristique eu. Vivamus molestie mattis porta. Nulla imperdiet eros vel elit hendrerit malesuada. Ut tincidunt pellentesque pellentesque. Ut imperdiet vestibulum tortor, in lobortis ipsum. Sed ultrices turpis velit, ut dignissim risus lobortis in. Morbi pellentesque velit leo, non facilisis risus hendrerit eget. Fusce velit dui, aliquet at magna nec, tincidunt tincidunt nibh. Aliquam feugiat bibendum dui nec scelerisque. Nam scelerisque neque facilisis bibendum pulvinar. Praesent nec ipsum et erat iaculis pellentesque non et urna. In mollis mi id maximus malesuada. Curabitur malesuada purus dolor. Maecenas at tempor tellus.",
-    "videoUrl": "https://www.youtube.com/embed/w5Wa_B1ZWow"
-  },
-  {
-    "id": "4",
-    "title": "sample 4 title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus semper mi,",
-    "description": "smaple 4 desc",
-    "videoUrl": "https://www.youtube.com/embed/w5Wa_B1ZWow"
-  },
-  {
-    "id": "5",
-    "title": "sample 55 title",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus semper mi, tincidunt lobortis ipsum tristique eu. Vivamus molestie mattis porta. Nulla imperdiet eros vel elit hendrerit malesuada. Ut tincidunt pellentesque pellentesque. Ut imperdiet vestibulum tortor, in lobortis ipsum. Sed ultrices turpis velit, ut dignissim risus lobortis in. Morbi pellentesque velit leo, non facilisis risus hendrerit eget. Fusce velit dui, aliquet at magna nec, tincidunt tincidunt nibh. Aliquam feugiat bibendum dui nec scelerisque. Nam scelerisque neque facilisis bibendum pulvinar. Praesent nec ipsum et erat iaculis pellentesque non et urna. In mollis mi id maximus malesuada. Curabitur malesuada purus dolor. Maecenas at tempor tellus.",
-    "videoUrl": "https://www.youtube.com/embed/w5Wa_B1ZWow"
+    "topic": "Overview and Introduction to Operating System Concepts",
+    "lessons": [
+      {
+        "title": "Overview and Introduction",
+        "videoUrl": "https://www.youtube.com/embed/aPXuewxXNgQ",
+        "time": "1:41"
+      },
+      {
+        "title": "Operating Systems Components",
+        "videoUrl": "https://www.youtube.com/embed/JSEe5xTmAqU",
+        "time": "8:19"
+      },
+      {
+        "title": "History and Examples of Operating Systems",
+        "videoUrl": "https://www.youtube.com/embed/sB25yMuOv6M",
+        "time": "3:47"
+      }
+    ]
   }
 ]

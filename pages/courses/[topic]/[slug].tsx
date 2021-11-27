@@ -2,13 +2,12 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ErrorPage from "next/error";
 import Link from "next/link";
-import courses from "../api/courses.json";
-import Page from "../components/Page";
+import slugify from "slugify";
+import courses from "../../api/courses.json";
+import Page from "../../components/Page";
 
 interface Page {
-  id: string;
   title: string;
-  description: string;
   videoUrl: string;
 }
 
@@ -31,13 +30,12 @@ export default function Course({ page }: { page: Page }) {
         </Link>
         <div>
           <p>{page.title}</p>
-          <p>{page.description}</p>
           <iframe
+            width="560"
+            height="315"
             src={page.videoUrl}
             frameBorder="0"
-            allow="autoplay; encrypted-media"
             allowFullScreen
-            title="video"
           />
         </div>
       </div>
@@ -46,14 +44,32 @@ export default function Course({ page }: { page: Page }) {
 }
 
 export async function getStaticPaths() {
-  const paths = courses.map((page) => {
-    return { params: { id: page.id } };
-  });
+  const paths = courses
+    .map(({ topic, lessons }) =>
+      lessons.map((lesson) => ({
+        params: {
+          topic: slugify(topic).toLowerCase(),
+          slug: slugify(lesson.title).toLowerCase(),
+        },
+      }))
+    )
+    .flat();
+
   return { paths, fallback: true };
 }
 
 export async function getStaticProps({ params }: any) {
-  const page = courses.find(({ id }) => params.id === id) || null;
+  const topic = courses.find(
+    ({ topic }) => params.topic === slugify(topic).toLowerCase()
+  );
+
+  if (!topic) {
+    return { props: { page: null } };
+  }
+
+  const page = topic.lessons.find(
+    ({ title }) => params.slug === slugify(title).toLowerCase()
+  );
 
   return { props: { page } };
 }
