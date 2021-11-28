@@ -1,6 +1,6 @@
 import Link from "next/link";
 import slugify from "slugify";
-import { Lesson } from "../types";
+import { Lesson } from "../api/types";
 
 interface Props {
   topic: string;
@@ -8,7 +8,13 @@ interface Props {
 }
 
 export default function LessonList({ topic, lessons }: Props) {
-  const slug = slugify(topic).toLowerCase();
+  let slug: string;
+
+  if (!topic) {
+    return null;
+  }
+
+  slug = slugify(topic).toLowerCase();
 
   return (
     <>
