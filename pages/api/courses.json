@@ -4,18 +4,60 @@
     "lessons": [
       {
         "title": "Overview and Introduction",
-        "videoUrl": "https://www.youtube.com/embed/aPXuewxXNgQ",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/aPXuewxXNgQ",
         "time": "1:41"
       },
       {
         "title": "Operating Systems Components",
-        "videoUrl": "https://www.youtube.com/embed/JSEe5xTmAqU",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/JSEe5xTmAqU",
         "time": "8:19"
       },
       {
         "title": "History and Examples of Operating Systems",
-        "videoUrl": "https://www.youtube.com/embed/sB25yMuOv6M",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/sB25yMuOv6M",
         "time": "3:47"
+      },
+      {
+        "title": "Quiz Time",
+        "type": "quiz",
+        "url": "https://forms.gle/gzh6xrxx3gMr5J4t9"
+      }
+    ]
+  },
+  {
+    "topic": "Memory Management",
+    "lessons": [
+      {
+        "title": "Introduction and Concept of Main Memory",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/cTi0fLXCqvc",
+        "time": "13:44"
+      },
+      {
+        "title": "Basic Hardware, Address Binding, Logical and Physical Addresses",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/Q759OSLJCwo",
+        "time": "11:11"
+      },
+      {
+        "title": "Main Memory Unit, Dynamic Loading, Swapping",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/VzGWhCnOl2k",
+        "time": "10:49"
+      },
+      {
+        "title": "Contiguous Memory Allocation, Dynamic Storage Allocation, Fragmentation",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/EwMQbAzHu4g",
+        "time": "14:20"
+      },
+      {
+        "title": "Quiz Time",
+        "type": "quiz",
+        "url": "https://bit.ly/3lfi3md "
       }
     ]
   }

@@ -1,5 +1,11 @@
 export interface Lesson {
   title: string;
-  videoUrl: string;
-  time: string;
+  type: LessonType;
+  url: string;
+  time?: string;
+}
+
+export enum LessonType {
+  lecture = "lecture",
+  quiz = "quiz",
 }

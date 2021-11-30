@@ -1,9 +1,16 @@
+import Head from "next/head";
 import Page from "./components/Page";
+import CoursePage from "./_courses";
 
 export default function Home() {
   return (
-    <Page>
-      <div className="flex-1 ">content</div>
-    </Page>
+    <div>
+      <Head>
+        <title>OS Courseware</title>
+      </Head>
+      <Page>
+        <CoursePage />
+      </Page>
+    </div>
   );
 }
