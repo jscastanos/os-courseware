@@ -17,7 +17,7 @@ export default function Accordion({
   topic,
   activeTopic,
   activeTitle,
-  items,
+  items = [],
 }: Props) {
   const currentTopic = topic === activeTopic;
   const [open, setOpen] = useState(currentTopic);
