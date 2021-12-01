@@ -38,7 +38,7 @@ export default function Course({ topic, page }: Props) {
               />
             )}
             {page.type === LessonType.quiz && (
-              <div className="bg-black-80 h-screen text-white flex flex-col justify-center items-center space-y-7">
+              <div className="bg-black-80 min-h-full text-white flex flex-col justify-center items-center space-y-7 px-7">
                 <h1 className="text-3xl">
                   Excellent! <FontAwesomeIcon icon={faFlagCheckered} />
                 </h1>
@@ -49,7 +49,7 @@ export default function Course({ topic, page }: Props) {
                 </span>
 
                 <a href={page.url} target="_blank" rel="noreferrer">
-                  <div className="hover:bg-black-100 bg-black-90 py-2 px-4">
+                  <div className="hover:bg-black-100 bg-black-90 py-2 px-4 rounded-xl">
                     <span className="text-white">I&apos;m Ready</span>
                     <FontAwesomeIcon
                       icon={faExternalLinkAlt}

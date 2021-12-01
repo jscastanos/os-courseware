@@ -22,6 +22,9 @@ module.exports = {
         "1/4": "25%",
         "1/2": "50%",
       },
+      backgroundImage: {
+        waves: "url('/waves.svg')",
+      },
     },
   },
   variants: {

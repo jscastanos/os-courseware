@@ -17,7 +17,7 @@ export default function Sidebar({ activeTitle, activeTopic }: Props) {
           <div className="flex mb-5">
             <Link href="/">
               <a>
-                <div className="hover:bg-black-100 py-2 px-4">
+                <div className="hover:bg-black-100 py-2 px-4 rounded-xl">
                   <FontAwesomeIcon icon={faHome} className="text-white mr-3" />
                   <span className="text-white">Home</span>
                 </div>
