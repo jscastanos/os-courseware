@@ -20,25 +20,31 @@ export default function LessonItem({ topic, title, time, active }: Props) {
   const titleSlug = slugify(title).toLowerCase();
 
   return (
-    <Link key={titleSlug} href={`/${slug}/${titleSlug}`}>
-      <a>
-        <div
-          className={classNames(
-            "flex flex-row justify-between items-center py-3 px-6 bg-gray-50 rounded-md hover:-translate-y-1 transition-all duration-200 hover:bg-gray-100",
-            { "bg-gray-200": active }
-          )}
-        >
-          <span>{title}</span>
-          {time ? (
-            <span className="w-20 text-left flex justify-end items-center">
-              <FontAwesomeIcon icon={faClock} className="mr-2" />
-              {time}
-            </span>
-          ) : (
-            <span>-</span>
-          )}
-        </div>
-      </a>
-    </Link>
+    <div
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+    >
+      <Link key={titleSlug} href={`/${slug}/${titleSlug}`}>
+        <a>
+          <div
+            className={classNames(
+              "flex flex-row justify-between items-center px-6 py-3 space-x-3 text-sm hover:bg-black-100",
+              { "text-blue-400": active }
+            )}
+          >
+            <span className="truncate">{title}</span>
+            {time ? (
+              <span className="w-20 text-left flex justify-end items-center">
+                <FontAwesomeIcon icon={faClock} className="mr-2" />
+                {time}
+              </span>
+            ) : (
+              <span>-</span>
+            )}
+          </div>
+        </a>
+      </Link>
+    </div>
   );
 }

@@ -1,60 +1,69 @@
+import {
+  faExternalLinkAlt,
+  faFlagCheckered,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ErrorPage from "next/error";
+import Head from "next/head";
 import slugify from "slugify";
 import courses from "../api/courses.json";
 import { Lesson, LessonType } from "../api/types";
-import LessonItem from "../components/LessonItem";
 import Page from "../components/Page";
+import Sidebar from "../components/Sidebar";
 
-export default function Course({ page }: { page: Lesson }) {
+interface Props {
+  topic: string;
+  page: Lesson;
+}
+
+export default function Course({ topic, page }: Props) {
   if (!page) {
     return <ErrorPage statusCode={404} />;
   }
 
   return (
-    <Page>
-      <div className="relative">
-        <div className="absolute top-0 left-0 w-96 p-4 bg-scroll">
-          {courses.map(({ topic, lessons }: any) => (
-            <div key={topic}>
-              <h3 className="font-extrabold py-3 px-6">
-                {topic.toUpperCase()}
-              </h3>
-              <div className="flex flex-col space-y-2">
-                {lessons.map(({ title, time }: any) => (
-                  <LessonItem
-                    key={title}
-                    topic={topic}
-                    title={title}
-                    time={time}
-                    active={page.title === title}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="ml-96 h-[calc(100vh-100px)] p-9">
-          <p className="text-xl pb-8 font-bold">{page.title.toUpperCase()}</p>
-          {page.type === LessonType.lecture && (
-            <iframe
-              className="h-full w-full"
-              src={page.url}
-              frameBorder="0"
-              allowFullScreen
-            />
-          )}
+    <div>
+      <Head>
+        <title>OS Courseware - {page.title}</title>
+      </Head>
+      <Page>
+        <div className="flex flex-col lg:flex-row">
+          <div className="flex-1 min-h-1/2 h-screen sticky top-0 z-20 bg-black-100">
+            {page.type === LessonType.lecture && (
+              <iframe
+                className="h-full w-full"
+                src={page.url}
+                frameBorder="0"
+                allowFullScreen
+              />
+            )}
+            {page.type === LessonType.quiz && (
+              <div className="bg-black-80 h-screen text-white flex flex-col justify-center items-center space-y-7">
+                <h1 className="text-3xl">
+                  Excellent! <FontAwesomeIcon icon={faFlagCheckered} />
+                </h1>
+                <h2 className="text-2xl">You just finished {topic}</h2>
+                <span>
+                  Assess yourself to on how well you&apos;ve done in this
+                  module. &nbsp;
+                </span>
 
-          {page.type === LessonType.quiz && (
-            <div>
-              Assess yourself click{" "}
-              <a href={page.url} target="_blank" rel="noreferrer">
-                here
-              </a>
-            </div>
-          )}
+                <a href={page.url} target="_blank" rel="noreferrer">
+                  <div className="hover:bg-black-100 bg-black-90 py-2 px-4">
+                    <span className="text-white">I&apos;m Ready</span>
+                    <FontAwesomeIcon
+                      icon={faExternalLinkAlt}
+                      className="text-white ml-3"
+                    />
+                  </div>
+                </a>
+              </div>
+            )}
+          </div>
+          <Sidebar activeTitle={page.title} activeTopic={topic} />
         </div>
-      </div>
-    </Page>
+      </Page>
+    </div>
   );
 }
 
@@ -74,17 +83,17 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }: any) {
-  const topic = courses.find(
+  const course = courses.find(
     ({ topic }) => params.topic === slugify(topic).toLowerCase()
   );
 
-  if (!topic) {
+  if (!course) {
     return { props: { page: null } };
   }
 
-  const page = topic.lessons.find(
+  const page = course.lessons.find(
     ({ title }) => params.slug === slugify(title).toLowerCase()
   );
 
-  return { props: { page } };
+  return { props: { page, topic: course.topic } };
 }
