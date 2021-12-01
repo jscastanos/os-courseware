@@ -8,9 +8,10 @@ A simple **learning platform** web application in partial fulfillment of MIT 001
   <a href="https://reactjs.org/" target="_blank">
     <img src="https://github.com/jscastanos/devicon/blob/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
   </a>
-  <a href="https://sass-lang.com" target="_blank">
-    <img src="https://github.com/jscastanos/devicon/blob/master/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="tailwind" width="40" height="40"/>
-  </a>  <a href="https://sass-lang.com" target="_blank">
+  <a href="https://tailwindcss.com/" target="_blank">
+    <img src="https://github.com/jscastanos/devicon/blob/master/icons/tailwindcss/tailwindcss-plain.svg" alt="tailwind" width="40" height="40"/>
+  </a> 
+  <a href="https://nextjs.org/" target="_blank">
     <img src="https://github.com/jscastanos/devicon/blob/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="40" height="40"/>
   </a>
  
