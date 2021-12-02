@@ -28,6 +28,27 @@
     ]
   },
   {
+    "topic": "Process Management",
+    "lessons": []
+  },
+  {
+    "topic": "Process Coordination and Synchronization",
+    "lessons": [
+      {
+        "title": "What is Process Synchronization?",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/R2VDtAsK6CI",
+        "time": "12:51"
+      },
+
+      {
+        "title": "Self-Assessment",
+        "type": "quiz",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSebZrRpRea4hteZco8nux14FIizG5NJ7j_o6eyyrWHUjHFD4g/viewform"
+      }
+    ]
+  },
+  {
     "topic": "Memory Management",
     "lessons": [
       {
@@ -57,7 +78,48 @@
       {
         "title": "Self-Assessment",
         "type": "quiz",
-        "url": "https://bit.ly/3lfi3md "
+        "url": "https://bit.ly/3lfi3md"
+      }
+    ]
+  },
+  {
+    "topic": "Storage Management",
+    "lessons": []
+  },
+  {
+    "topic": "Distributed System and Networking",
+    "lessons": []
+  },
+  {
+    "topic": "System Protection And Security",
+    "lessons": [
+      {
+        "title": "What is System Protection and Security?",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/ZHn5QRvDOHg",
+        "time": "1:10:39"
+      },
+
+      {
+        "title": "Self-Assessment",
+        "type": "quiz",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSe8JwoeKFKvvB-fLqW9Rws2Yhh68qK3rYyHBng4azII56hqiQ/viewform"
+      }
+    ]
+  },
+  {
+    "topic": "Operating System in the Industrial Setting",
+    "lessons": [
+      {
+        "title": "Operating System in the Industry",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/MHHHWSwPSWA",
+        "time": "15:16"
+      },
+      {
+        "title": "Self-Assessment",
+        "type": "quiz",
+        "url": "https://bit.ly/3lg4GSV"
       }
     ]
   }

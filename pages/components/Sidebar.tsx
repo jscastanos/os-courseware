@@ -39,6 +39,8 @@ export default function Sidebar({ activeTitle, activeTopic }: Props) {
             />
           </div>
         ))}
+        {/* spacing */}
+        <div className="h-16 w-full" />
       </div>
     </div>
   );

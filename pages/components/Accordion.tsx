@@ -22,6 +22,18 @@ export default function Accordion({
   const currentTopic = topic === activeTopic;
   const [open, setOpen] = useState(currentTopic);
 
+  if (!items.length) {
+    return (
+      <div className="outline-none">
+        <div className="bg-black-90 flex justify-between px-4 py-3 items-center text-gray-500 border-t border-black-80 pr-10 relative cursor-not-allowed">
+          <div className="text-gray-90">
+            {id} - {topic}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       className="outline-none accordion-section"
