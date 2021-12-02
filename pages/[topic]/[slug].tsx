@@ -28,7 +28,7 @@ export default function Course({ topic, page }: Props) {
       </Head>
       <Page>
         <div className="flex flex-col lg:flex-row">
-          <div className="flex-1 min-h-1/2 h-screen sticky top-0 z-20 bg-black-100">
+          <div className="flex-1 min-h-1/2 h-screen bg-black-100">
             {page.type === LessonType.lecture && (
               <iframe
                 className="h-full w-full"
@@ -50,7 +50,7 @@ export default function Course({ topic, page }: Props) {
 
                 <a href={page.url} target="_blank" rel="noreferrer">
                   <div className="hover:bg-black-100 bg-black-90 py-2 px-4 rounded-xl">
-                    <span className="text-white">I&apos;m Ready</span>
+                    <span className="text-white">Take me there</span>
                     <FontAwesomeIcon
                       icon={faExternalLinkAlt}
                       className="text-white ml-3"
