@@ -29,7 +29,19 @@
   },
   {
     "topic": "Process Management",
-    "lessons": []
+    "lessons": [
+      {
+        "title": "What is a Process?",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/Luwhhz-yJaw",
+        "time": "9:48"
+      },
+      {
+        "title": "Self-Assessment",
+        "type": "quiz",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSeCPi83v7JbrvD77zep9jmjOOF6o-jL-xjqO6-h9rMx5c7OYg/viewform"
+      }
+    ]
   },
   {
     "topic": "Process Coordination and Synchronization",
@@ -40,7 +52,6 @@
         "url": "https://www.youtube.com/embed/R2VDtAsK6CI",
         "time": "12:51"
       },
-
       {
         "title": "Self-Assessment",
         "type": "quiz",
