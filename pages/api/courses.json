@@ -95,7 +95,20 @@
   },
   {
     "topic": "Storage Management",
-    "lessons": []
+    "lessons": [
+      {
+        "title": "What is Storage Management?",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/3sNDJGI12oo",
+        "time": "15:19"
+      },
+
+      {
+        "title": "Self-Assessment",
+        "type": "quiz",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSdYPvg3-qGaiNogrWNiA_oeRZdYvcFboVvq44PLy6r7hCsq7w/viewform"
+      }
+    ]
   },
   {
     "topic": "Distributed System and Networking",
