@@ -24,7 +24,9 @@ export default function Course({ topic, page }: Props) {
   return (
     <div>
       <Head>
-        <title>OS Courseware - {page.title}</title>
+        <title>
+          {topic} - {page.title}
+        </title>
       </Head>
       <Page>
         <div className="flex flex-col lg:flex-row">
@@ -60,6 +62,7 @@ export default function Course({ topic, page }: Props) {
               </div>
             )}
           </div>
+
           <Sidebar activeTitle={page.title} activeTopic={topic} />
         </div>
       </Page>

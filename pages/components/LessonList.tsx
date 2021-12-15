@@ -14,8 +14,14 @@ export default function LessonList({ topic, lessons }: Props) {
     <div className="w-full">
       <h3 className="font-extrabold py-3 px-6">{topic.toUpperCase()}</h3>
       <div className="flex flex-col space-y-2">
-        {lessons.map(({ title, time }) => (
-          <LessonItem key={title} topic={topic} title={title} time={time} />
+        {lessons.map(({ title, time, url }) => (
+          <LessonItem
+            key={title}
+            topic={topic}
+            title={title}
+            time={time}
+            url={url}
+          />
         ))}
       </div>
     </div>

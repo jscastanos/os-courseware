@@ -9,15 +9,25 @@ interface Props {
   title: string;
   time?: string;
   active?: boolean;
+  url: string;
 }
 
-export default function LessonItem({ topic, title, time, active }: Props) {
+export default function LessonItem({ topic, title, time, active, url }: Props) {
   if (!topic || !title) {
     return null;
   }
 
   const slug = slugify(topic).toLowerCase();
   const titleSlug = slugify(title).toLowerCase();
+
+  if (!url) {
+    return (
+      <div className="flex flex-row justify-between items-center px-6 py-3 space-x-3 text-sm cursor-default">
+        <span className="truncate">{title}</span>
+        <span>-</span>
+      </div>
+    );
+  }
 
   return (
     <div

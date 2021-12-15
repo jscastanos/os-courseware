@@ -112,7 +112,25 @@
   },
   {
     "topic": "Distributed System and Networking",
-    "lessons": []
+    "lessons": [
+      {
+        "title": "Part 1",
+        "type": "lecture",
+        "url": null,
+        "time": "-"
+      },
+      {
+        "title": "Part 2",
+        "type": "lecture",
+        "url": "https://www.youtube.com/embed/3Jpp5tDvNRk",
+        "time": "27:25"
+      },
+      {
+        "title": "Self-Assessment",
+        "type": "quiz",
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLScX_lC5zV1VSwo9JsfUfLmu8bgVc2QYzy0xeHbET08MO2FY6g/viewform"
+      }
+    ]
   },
   {
     "topic": "System Protection And Security",
