@@ -116,8 +116,15 @@
       {
         "title": "Part 1",
         "type": "lecture",
-        "url": null,
-        "time": "-"
+        "url": "https://www.youtube.com/embed/vYhiy8kYTm8",
+        "time": "29:39"
+      },
+      {
+        "title": "Self-Assessment - Part 1",
+        "type": "quiz",
+        "quizTitle": "Distributed System and Networking - Part 1",
+        "showCustomTitle": true,
+        "url": "https://docs.google.com/forms/d/e/1FAIpQLSfVOCtezUA1JfbriOa7LvXsWFg81hf1DaQf2EJC0n07FEXH0A/viewform"
       },
       {
         "title": "Part 2",
@@ -126,8 +133,10 @@
         "time": "27:25"
       },
       {
-        "title": "Self-Assessment",
+        "title": "Self-Assessment - Part 2",
         "type": "quiz",
+        "quizTitle": "Distributed System and Networking - Part 2",
+        "showCustomTitle": true,
         "url": "https://docs.google.com/forms/d/e/1FAIpQLScX_lC5zV1VSwo9JsfUfLmu8bgVc2QYzy0xeHbET08MO2FY6g/viewform"
       }
     ]

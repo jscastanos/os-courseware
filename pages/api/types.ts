@@ -3,6 +3,8 @@ export interface Lesson {
   type: LessonType;
   url: string;
   time?: string;
+  showCustomTitle?: boolean;
+  quizTitle?: string;
 }
 
 export enum LessonType {

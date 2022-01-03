@@ -44,7 +44,10 @@ export default function Course({ topic, page }: Props) {
                 <h1 className="text-3xl">
                   Excellent! <FontAwesomeIcon icon={faFlagCheckered} />
                 </h1>
-                <h2 className="text-2xl">You just finished {topic}</h2>
+                <h2 className="text-2xl">
+                  You just finished{" "}
+                  {page.showCustomTitle ? page.quizTitle : topic}
+                </h2>
                 <span>
                   Assess yourself to on how well you&apos;ve done in this
                   module. &nbsp;
