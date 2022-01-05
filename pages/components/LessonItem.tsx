@@ -9,10 +9,16 @@ interface Props {
   title: string;
   time?: string;
   active?: boolean;
-  url: string;
+  readOnly: boolean;
 }
 
-export default function LessonItem({ topic, title, time, active, url }: Props) {
+export default function LessonItem({
+  topic,
+  title,
+  time,
+  active,
+  readOnly,
+}: Props) {
   if (!topic || !title) {
     return null;
   }
@@ -20,7 +26,7 @@ export default function LessonItem({ topic, title, time, active, url }: Props) {
   const slug = slugify(topic).toLowerCase();
   const titleSlug = slugify(title).toLowerCase();
 
-  if (!url) {
+  if (readOnly) {
     return (
       <div className="flex flex-row justify-between items-center px-6 py-3 space-x-3 text-sm cursor-default">
         <span className="truncate">{title}</span>

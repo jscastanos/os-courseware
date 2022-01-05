@@ -24,6 +24,16 @@
         "title": "Self-Assessment",
         "type": "quiz",
         "url": "https://forms.gle/gzh6xrxx3gMr5J4t9"
+      },
+      {
+        "title": "Course Materials",
+        "type": "materials",
+        "files": [
+          {
+            "name": "overview and intro to os concepts.pptx",
+            "url": "https://docs.google.com/presentation/d/1RPoC5czKDcA9ZwAAzt4CWepa8a1Mepo3/edit#slide=id.p1"
+          }
+        ]
       }
     ]
   },
@@ -40,6 +50,20 @@
         "title": "Self-Assessment",
         "type": "quiz",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSeCPi83v7JbrvD77zep9jmjOOF6o-jL-xjqO6-h9rMx5c7OYg/viewform"
+      },
+      {
+        "title": "Course Materials",
+        "type": "materials",
+        "files": [
+          {
+            "name": "Process Management PPT Copy.pptx",
+            "url": "https://docs.google.com/presentation/d/1zHpDuQIYUrfmU5bZ0Cs3L3q8CP306t5n/edit#slide=id.p1"
+          },
+          {
+            "name": "Process Management PPT Copy.pdf",
+            "url": "https://drive.google.com/file/d/1xIuy0smVpUgnoTA9H9ar0k7ChNJgSIQU/view"
+          }
+        ]
       }
     ]
   },
@@ -56,6 +80,20 @@
         "title": "Self-Assessment",
         "type": "quiz",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSebZrRpRea4hteZco8nux14FIizG5NJ7j_o6eyyrWHUjHFD4g/viewform"
+      },
+      {
+        "title": "Course Materials",
+        "type": "materials",
+        "files": [
+          {
+            "name": "Process Synchronization in Operating Systems - Definition & Mechanisms.pptx",
+            "url": "https://docs.google.com/presentation/d/1PmglZ5901D3C5caRqr-s3t_cHVnes119/edit#slide=id.p1"
+          },
+          {
+            "name": "MODULE - FRONT PAGE MODULE FOR PROCESS SYNCHRONIZATION.pdf",
+            "url": "https://drive.google.com/file/d/1A3h4JpemlSajmQL1LBucak41-alnOMwK/view"
+          }
+        ]
       }
     ]
   },
@@ -90,6 +128,20 @@
         "title": "Self-Assessment",
         "type": "quiz",
         "url": "https://bit.ly/3lfi3md"
+      },
+      {
+        "title": "Course Materials",
+        "type": "materials",
+        "files": [
+          {
+            "name": "Memory Management Presentation",
+            "url": "https://www.canva.com/design/DAEwLhi7jHI/WqdauQ3ibqzcWTKLrLUA1Q/view?utm_content=DAEwLhi7jHI&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton"
+          },
+          {
+            "name": "BOFETIADO-KJT_MEMORY _MANAGEMENT_V.2.pdf",
+            "url": "https://drive.google.com/file/d/1pOoN9kCLE_G7qXpyf6xN6cRVUpeMTSVG/view"
+          }
+        ]
       }
     ]
   },
@@ -107,6 +159,24 @@
         "title": "Self-Assessment",
         "type": "quiz",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSdYPvg3-qGaiNogrWNiA_oeRZdYvcFboVvq44PLy6r7hCsq7w/viewform"
+      },
+      {
+        "title": "Course Materials",
+        "type": "materials",
+        "files": [
+          {
+            "name": "Module-for-Storage-Management-MIT001.docx",
+            "url": "https://docs.google.com/document/d/19jCx2Xz64ALp3lGnczZ-g_EJkUrUV1a7/edit"
+          },
+          {
+            "name": "Storage-Management-MIT001.pptx",
+            "url": "https://docs.google.com/presentation/d/1zWetTZVeQ_XelAK1yVlqbuskTahn2GA2/edit#slide=id.p1"
+          },
+          {
+            "name": "Storage-Management-MIT001.pdf",
+            "url": "https://drive.google.com/file/d/13JkiFFb-sa7kGiyMegPfA6_mEijSlO2m/view"
+          }
+        ]
       }
     ]
   },
@@ -138,6 +208,20 @@
         "quizTitle": "Distributed System and Networking - Part 2",
         "showCustomTitle": true,
         "url": "https://docs.google.com/forms/d/e/1FAIpQLScX_lC5zV1VSwo9JsfUfLmu8bgVc2QYzy0xeHbET08MO2FY6g/viewform"
+      },
+      {
+        "title": "Course Materials",
+        "type": "materials",
+        "files": [
+          {
+            "name": "DISTRIBUTED SYSTEMS AND NETWORKING PART 1.pdf",
+            "url": "https://drive.google.com/file/d/1MejS_2F_q17Uud9S7H61XPCp2eDYaB1O/view"
+          },
+          {
+            "name": "Distributed System and Networking (Part 2).docx",
+            "url": "https://docs.google.com/document/d/16fSuYO3V-6s0pChkucO1YtherOCtUQQD/edit"
+          }
+        ]
       }
     ]
   },
@@ -155,6 +239,20 @@
         "title": "Self-Assessment",
         "type": "quiz",
         "url": "https://docs.google.com/forms/d/e/1FAIpQLSe8JwoeKFKvvB-fLqW9Rws2Yhh68qK3rYyHBng4azII56hqiQ/viewform"
+      },
+      {
+        "title": "Course Materials",
+        "type": "materials",
+        "files": [
+          {
+            "name": "LONGHAS_RANARA - OS Presentation and Security.pdf",
+            "url": "https://drive.google.com/file/d/1zojmgqVCPphBjOf_iTQJpRNPr4EplArt/view"
+          },
+          {
+            "name": "System Protection and security.pptx",
+            "url": "https://docs.google.com/presentation/d/1CiL7i5ibsyZWtycZNxTnLzFwa3Co4pYV/edit#slide=id.p1"
+          }
+        ]
       }
     ]
   },
@@ -171,6 +269,24 @@
         "title": "Self-Assessment",
         "type": "quiz",
         "url": "https://bit.ly/3lg4GSV"
+      },
+      {
+        "title": "Course Materials",
+        "type": "materials",
+        "files": [
+          {
+            "name": "Module_Operating System in the Industrial Setting.docx",
+            "url": "https://docs.google.com/document/d/1NM2zLz_zGSQO8p_tzOpUi-FqWa7hKkmqBjZUkLlGnhU/edit"
+          },
+          {
+            "name": "Module_Operating System in the Industrial Setting.pdf",
+            "url": "https://drive.google.com/file/d/1J93efuGtbiH4XpfoWC43QPjWt6dWO1Ji/view"
+          },
+          {
+            "name": "Operating System in the Industrial Setting.pptx",
+            "url": "https://docs.google.com/presentation/d/1SFX5qPSBSp9I16mw19KvmWecvTHrVQvW/edit#slide=id.p1"
+          }
+        ]
       }
     ]
   }

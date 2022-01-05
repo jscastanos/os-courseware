@@ -1,3 +1,4 @@
+import { faFile, faFileAlt } from "@fortawesome/free-regular-svg-icons";
 import {
   faExternalLinkAlt,
   faFlagCheckered,
@@ -7,9 +8,15 @@ import ErrorPage from "next/error";
 import Head from "next/head";
 import slugify from "slugify";
 import courses from "../api/courses.json";
-import { Lesson, LessonType } from "../api/types";
+import { Lesson } from "../api/types";
 import Page from "../components/Page";
 import Sidebar from "../components/Sidebar";
+
+enum LessonType {
+  lecture = "lecture",
+  quiz = "quiz",
+  materials = "materials",
+}
 
 interface Props {
   topic: string;
@@ -64,6 +71,39 @@ export default function Course({ topic, page }: Props) {
                 </a>
               </div>
             )}
+            {page.type === LessonType.materials && (
+              <div className="bg-black-80 min-h-full text-white flex flex-col justify-center items-center space-y-7 px-7">
+                <h1 className="text-3xl space-x-3">
+                  <span>Course Materials</span>
+                  <FontAwesomeIcon icon={faFileAlt} />
+                  <FontAwesomeIcon icon={faFile} />
+                </h1>
+                <span>
+                  Here are the materials used in this course; feel free to view
+                  and download them.
+                </span>
+
+                <div className="space-y-2">
+                  {page.files &&
+                    page.files.map(({ name, url }, index) => (
+                      <div key={name} className="flex flex-row space-x-1">
+                        <span className="p-1">
+                          {index + 1}. {name}
+                        </span>
+                        <a href={url} target="_blank" rel="noreferrer">
+                          <div className="hover:bg-black-100 bg-black-90 p-1.5 mt-1 rounded-xl text-xs">
+                            <span className="text-white">Open</span>
+                            <FontAwesomeIcon
+                              icon={faExternalLinkAlt}
+                              className="text-white ml-1"
+                            />
+                          </div>
+                        </a>
+                      </div>
+                    ))}
+                </div>
+              </div>
+            )}
           </div>
 
           <Sidebar activeTitle={page.title} activeTopic={topic} />
@@ -97,7 +137,8 @@ export async function getStaticProps({ params }: any) {
     return { props: { page: null } };
   }
 
-  const page = course.lessons.find(
+  const lessons: Lesson[] = course.lessons;
+  const page = lessons.find(
     ({ title }) => params.slug === slugify(title).toLowerCase()
   );
 
