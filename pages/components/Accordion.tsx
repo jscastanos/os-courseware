@@ -67,14 +67,14 @@ export default function Accordion({
       >
         <p className="text-gray-400 text-justify">
           <div className="flex flex-col">
-            {items.map(({ title, time, url }: any) => (
+            {items.map(({ title, time }: any) => (
               <LessonItem
                 key={title}
                 topic={topic}
                 title={title}
                 time={time}
                 active={activeTitle === title && currentTopic}
-                url={url}
+                readOnly={false}
               />
             ))}
           </div>
